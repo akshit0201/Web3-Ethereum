@@ -1,0 +1,10 @@
+{
+  "name": "yarn-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "akshit0201 <akshit0201@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.9.1"
+  }
+}
