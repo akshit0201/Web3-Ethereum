@@ -4,9 +4,12 @@ import "hardhat/console.sol";
 
 contract Counter {
     uint private counter;
-    function count() public returns (uint) {
+    function count() public {
         counter++;
         console.log("counter", counter);
+    }
+
+    function getCounter() public view returns (uint){
         return counter;
     }
 }
