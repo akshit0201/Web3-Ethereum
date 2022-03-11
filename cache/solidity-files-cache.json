@@ -37,8 +37,8 @@
       ]
     },
     "/Users/thebrainiac/Desktop/jpegdegens/contracts/Counter.sol": {
-      "lastModificationDate": 1646965709691,
-      "contentHash": "09754d4e41425e2ad6c8738d01ee81d4",
+      "lastModificationDate": 1646990878576,
+      "contentHash": "5427889c450e55a36e0a3e42cab4c6b3",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.10",
