@@ -25,13 +25,26 @@ async function getContract() {
     const contract = new ethers.Contract(
         address,
         [
-            "function hello() public pure returns(string memory)",
-        ], // abi
+"function count() public",
+        "function getCounter() public view returns (uint)"], // abi
         provider
     );
 
-    console.log("We have done it, time to call");
-    console.log(await contract.hello());
+
+
+    const el = document.createElement("div");
+    async function setC(){
+        el.innerHTML = await contract.getCounter();
+    }
+    setC();
+    const button = document.createElement("button");
+    button.innerText="increment";
+    button.onclick = async function(){
+        await contract.count();
+        setC();
+    }
+    document.body.appendChild(el);
+    document.body.appendChild(button);
 }
 
 
