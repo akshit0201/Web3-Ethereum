@@ -21,7 +21,7 @@ async function getContract() {
     }
 
     // @ts-ignore
-    const provider = new ethers.providers.Web3Provider(window.ethereum)
+    const provider = new ethers.providers.Web3Provider(window.ethereum).getSigner()
     const contract = new ethers.Contract(
         address,
         [
@@ -40,7 +40,8 @@ async function getContract() {
     const button = document.createElement("button");
     button.innerText="increment";
     button.onclick = async function(){
-        await contract.count();
+        const t = await contract.count();
+        await t.wait();
         setC();
     }
     document.body.appendChild(el);
