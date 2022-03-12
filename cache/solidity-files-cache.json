@@ -109,8 +109,8 @@
       ]
     },
     "/Users/thebrainiac/Desktop/jpegdegens/contracts/Hero.sol": {
-      "lastModificationDate": 1647012999080,
-      "contentHash": "b836cd72b9ec3093f812013daca4837e",
+      "lastModificationDate": 1647057448439,
+      "contentHash": "5c7d1ab46b189d043c1a8e5ee5bead4a",
       "sourceName": "contracts/Hero.sol",
       "solcConfig": {
         "version": "0.8.10",

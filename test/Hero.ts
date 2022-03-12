@@ -12,6 +12,9 @@ describe("Hero",function (){
     before(async function (){
         hero = await ch()
     })
+    it("should get zero hero array",async function (){
+        expect(await hero.geth()).to.deep.equal([])
+    })
     it("should fail due to insufficient funds",async function (){
         let e;
         try{
@@ -21,7 +24,6 @@ describe("Hero",function (){
         }
         catch (err){
             e = err;
-            console.log(err)
         }
         expect(e.message.includes("Insufficient")).to.equal(true)
     })
