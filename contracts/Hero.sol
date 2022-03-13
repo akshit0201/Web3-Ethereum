@@ -8,6 +8,21 @@ contract Hero {
     function generateRandom() public view returns (uint) {
         return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp)));
     }
+    function getS(uint hero) public pure returns (uint){
+        return (hero<<2) & 0x1F;
+    }
+    function getH(uint hero) public pure returns (uint){
+        return (hero<<22) & 0x1F;
+    }
+    function getD(uint hero) public pure returns (uint){
+        return (hero<<7) & 0x1F;
+    }
+    function getI(uint hero) public pure returns (uint){
+        return (hero<<12) & 0x1F;
+    }
+    function getM(uint hero) public pure returns (uint){
+        return (hero<<17) & 0x1F;
+    }
 function geth() public view returns (uint[] memory){
 return hadd[msg.sender];
 }
