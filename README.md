@@ -1,9 +1,9 @@
 # Web3-Ethereum
-This project contains two different solidity files: [first.sol](./contracts/first.sol), [Counter.sol](./contracts/Counter.sol), and [Hero.sol](./contracts/Hero.sol)
+This project contains three different solidity files: [first.sol](./contracts/first.sol), [Counter.sol](./contracts/Counter.sol), and [Hero.sol](./contracts/Hero.sol)
 
 - `first.sol` is a simple hello world program which prints `Hello, World` in the console through the hardhat server.
 - `Counter.sol` is a simple increment program which increments a counter.
-- `Hero.sol` is a random hero generator, which generates heroes with five stats(Health, Intellect, Dexterity, Magic and Strength) and the values for each of these stats is randomly decided.
+- `Hero.sol` is a random hero generator, which generates heroes with five stats(Health, Intellect, Dexterity, Magic and Strength) and the values for each of these stats is randomly decided. The heroes themselves come in three categories: Mage, Barbarian and Archer
 
 The scripts for running these soliditiy files can be found in the [scripts](./scripts/) folder. Additionally, the solidity files can be deployed to the web through a server. The [index.ts](./src/index.ts) may have to be edited suitably.
 
