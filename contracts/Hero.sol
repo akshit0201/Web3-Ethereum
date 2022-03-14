@@ -5,7 +5,7 @@ contract Hero {
 
     mapping(address => uint[]) hadd;
 
-    function generateRandom() public view returns (uint) {
+    function generateRandom() public virtual view returns (uint) {
         return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp)));
     }
     function getS(uint hero) public pure returns (uint){
@@ -28,7 +28,7 @@ return hadd[msg.sender];
 }
     function cH(Class cl) public payable{
         require(msg.value >= 0.05 ether,"Insufficient funds");
-        uint[] stats = uint[](5);
+        uint[] memory stats = new uint[](5);
         stats[0] = 2;
         stats[1] = 7;
         stats[2] = 12;

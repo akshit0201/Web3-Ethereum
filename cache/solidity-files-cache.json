@@ -109,8 +109,8 @@
       ]
     },
     "/Users/thebrainiac/Desktop/jpegdegens/contracts/Hero.sol": {
-      "lastModificationDate": 1647057448439,
-      "contentHash": "5c7d1ab46b189d043c1a8e5ee5bead4a",
+      "lastModificationDate": 1647219934774,
+      "contentHash": "605b48cf1472f8e5fe667f269d199122",
       "sourceName": "contracts/Hero.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -141,6 +141,43 @@
       ],
       "artifacts": [
         "Hero"
+      ]
+    },
+    "/Users/thebrainiac/Desktop/jpegdegens/contracts/testhero.sol": {
+      "lastModificationDate": 1647219815963,
+      "contentHash": "db3ed0813c7742ad6ca7bb41221e88fa",
+      "sourceName": "contracts/testhero.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Hero.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "testhero"
       ]
     }
   }
